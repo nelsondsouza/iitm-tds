@@ -1,0 +1,19 @@
+name: Email Test Workflow
+
+on:
+  # Run the workflow manually
+  workflow_dispatch:
+  # Optional: Schedule it daily
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      
+      - name: 22f1001290@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
